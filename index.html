@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="dflex">
+    <main>
+        <div class="compressor screensize">
+            <div class="compressorContainer">
+                <div class="compressorBody">
+                    <div class="compressorBlock dflex">
+                        <div class="compressorBox">
+                            <h1>Photo Compresser</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="imageBody">
+                    <div class="imageBlock">
+                        <div class="imageBox dflex-col"><label for="imageInput" class="upload">
+                            <i class="fa fa-upload"></i> Upload Image
+                        </label>
+                        <input type="file" id="imageInput">
+                            <input type="number" id="targetSize" placeholder="Target size (KB)">
+                            <button type="button" onclick="compressAndDownload()">Compress & Download</button>
+                            <p id="originalSize"></p>
+                            <p id="compressedSize"></p>
+                            <img id="preview" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>    

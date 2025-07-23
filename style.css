@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 0.1rem solid red; */
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url(./assets/images/bg_image.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+:root {
+  --primaryColor: #fcc349;
+  --secondaryColor: #f9f9f9;
+  --TertiararyColor: #ffffff60;
+  --text-color: #3b3b3b;
+  --ffprimary: "Playfair Display";
+  --ffsecondary: "Roboto";
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+.screensize{
+  max-width: 600px;
+  margin: auto;
+}
+
+.dflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dflex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-family: var(--ffprimary);
+  color: var(--primaryColor);
+  font-size: 4rem;
+  font-weight: 800;
+  padding: 4rem 0rem;
+  text-shadow: 0 0 1rem var(--text-color);
+}
+
+p{
+  font-family: var(--ffsecondary);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+button{
+  font-family: var(--ffsecondary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+input{
+  padding: 1rem;
+  width: 70%;
+  margin: 2rem 0rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#imageInput{
+  display: none;
+}
+
+.compressor{
+  background-color: var(--TertiararyColor);
+  backdrop-filter: blur(0.2rem);
+  border-radius: 2rem;
+}
+
+.imageBody{
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+#preview{
+  width: auto;
+  height: 160px;
+  margin-top: 2rem;
+}
+
+.upload {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 1.2rem 1.6rem;
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--secondaryColor);
+  border-radius: 0.7rem;
+}
+
+.upload:hover {
+  border: 0.3rem solid var(--secondaryColor);
+}
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+@media (max-width: 576px) {
+
+  h1{
+    font-size: 3.5rem;
+    padding: 2rem;
+  }
+  input{
+    padding: 0.8rem;
+  }
+  .compressor{
+    margin: 0rem 10rem;
+  }
+  .upload {
+    font-size: 1.3rem;
+  }
+  .imageBody{
+    padding: 0rem 0rem 1.6rem 0rem;
+  }
+  }
