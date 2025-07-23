@@ -97,6 +97,8 @@ input[type="file"] {
   background-color: var(--TertiararyColor);
   backdrop-filter: blur(0.2rem);
   border-radius: 2rem;
+  border: 0.3rem solid var(--TertiararyColor);
+  box-shadow: 0 0 0.8rem var(--primaryColor);
 }
 
 .imageBody{
@@ -129,7 +131,7 @@ input[type="file"] {
 @media (max-width: 576px) {
 
   h1{
-    font-size: 3.2rem;
+    font-size: 3rem;
     padding: 2rem;
   }
   input{
