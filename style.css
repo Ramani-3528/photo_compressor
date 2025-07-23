@@ -97,7 +97,7 @@ input[type="file"] {
   background-color: var(--TertiararyColor);
   backdrop-filter: blur(0.2rem);
   border-radius: 2rem;
-  border: 0.3rem solid var(--TertiararyColor);
+  border: 0.3rem solid var(--secondaryColor);
   box-shadow: 0 0 0.8rem var(--primaryColor);
 }
 
