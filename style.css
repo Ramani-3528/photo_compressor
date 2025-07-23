@@ -65,6 +65,7 @@ p{
   font-family: var(--ffsecondary);
   font-size: 1.6rem;
   font-weight: 600;
+  padding-top: 1rem;
 }
 
 button{
