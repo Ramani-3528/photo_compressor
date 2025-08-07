@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-wrap: pretty;
   /* border: 0.1rem solid red; */
 }
 
